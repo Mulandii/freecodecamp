@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Survey Form</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+<div class="bodyy">
+    <header>
+    <h1><b>FreeCodeCamp Survey Form</b></h1>
+    <h2><em>Thank you for taking your time to help us improve the platform</em></h2>
+    </header>
+    <main>
+    <form id="Survey form">
+    <label for="Name">Name</label><br><br>
+    <input type="text" class="x" name="name" id="name" placeholder="Enter your name" required><br><br>
+    <label for="Email">Email</label><br><br>
+    <input type="text" class="x" name="email" id="email" placeholder="Enter your email" required><br><br>
+    <label for="Age">Age (optional)</label><br><br>
+    <input type="number" class="x"  name="age" id="Age" placeholder="Age" min=1 max=100><br>
+        <label for="dropdown">Which option best describes your current role?</label><br>
+    
+        <select name="role" class="x" id="dropdown" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="worker">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="prefer">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
+    <p>Would you recommend freeCodeCamp to a friend?</p>
+    <input type="radio" class="radio" name="recommend" id="definitely">
+    <label for="definitely">Definitely</label><br>
+    <input type="radio"  class="radio"name="recommend" id="maybe">
+    <label for="maybe">Maybe</label><br>
+    <input type="radio" class="radio" name="recommend" id="notsure">
+    <label for="notsure">Not sure</label><br>
+    <p>What is your favorite feature of freeCodeCamp?</p>
+   <div>  <select name="feature" class="p" id="feature-dropdown" required></div>
+        <option disabled selected value>Select an option</option>
+        <option value="a">Challenges</option>
+        <option value="b">Projects</option>
+        <option value="c">Community</option>
+        <option value="d">Open Source</option>
+    </select>
+    <p>What would you like to see improved?<br><span class="clue">(Check all that apply)</span></p>
+    <input type="checkbox" class="checkbox" name="prefer" id="Front-endProjects">
+    <label for="Front-endProjects">Front-end Projects</label><br>
+    <input type="checkbox" class="checkbox"  name="prefer" id="Back-endProjects">
+     <label for="Back-endProjects">Back-end Projects</label><br>
+    <input type="checkbox"  class="checkbox" name="prefer" id="Challenges">
+           <label for="Challenges">Challenges</label><br>
+    <input type="checkbox" class="checkbox"  name="prefer" id="OpenSourceCommunity">
+  <label for="OpenSourceCommunity">Open Source Community</label><br>
+    <input type="checkbox" class="checkbox"  name="prefer" id="Gitter help rooms">
+    <label for="Gitter help rooms">Gitter help rooms</label><br>
+    <input type="checkbox"  class="checkbox" name="prefer" id="videos">
+               <label for="videos">videos</label><br>
+    <input type="checkbox" class="checkbox"  name="prefer" id="City Meetups">
+    <label for="City Meetups">City Meetups</label><br>
+    <input type="checkbox" class="checkbox"  name="prefer" id="wiki">
+    <label for="wiki">Wiki</label><br>
+    <input type="checkbox"  class="checkbox" name="prefer" id="forum">
+    <label for="forum">Forum</label><br>
+    <input type="checkbox"  class="checkbox" name="prefr" id=""additional courses>
+    <label for="additional courses">Additional Courses</label><br>
+    <p>Any comments or suggestions?</p>
+    <textarea name="" id="" cols="30" rows="5" placeholder="Enter your comment here.."></textarea><br><br>
+    <button style="background-color:to;"submit" id="submit" class="submit-button">SUBMIT</button>
+    </form>
+</main>
+</div>
+</body>
+</html>
